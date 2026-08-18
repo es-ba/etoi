@@ -20,7 +20,6 @@ devel:
   forceShowAsEditable: false
   useFileDevelopment: true
 client-setup:
-  skin: ""
   background-img: ""
   lang: es
   title: etoi274
