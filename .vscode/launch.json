@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "preLaunchTask": "build-all",
+            "program": "${workspaceFolder}/dist/server/server-etoi.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "back office Fast Launch",
+            "env": {"BACKEND_PLUS_LOCAL_CONFIG":"local-config.yaml"},
+            "program": "${workspaceFolder}/dist/server/server-etoi.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "DM Fast Launch",
+            "env": {"BACKEND_PLUS_LOCAL_CONFIG":"local-config-dm.yaml"},
+            "program": "${workspaceFolder}/dist/server/server-etoi.js",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "dumpDb",
+            "preLaunchTask": "build-all",
+            "program": "${workspaceFolder}/dist/server/server-etoi.js",
+            "args": [
+                "--dump-db"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Fast dumpDb",
+            "program": "${workspaceFolder}/dist/server/server-etoi.js",
+            "args": [
+                "--dump-db"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
+    ]
+}

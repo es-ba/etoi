@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "../../dist/client",
+        "typeRoots" : ["node_modules/@types", "../../node_modules/types.d.ts/modules"],
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "lib": ["dom", "es2016"],
+    },
+    "include":[
+        "."
+    ],
+    "extends": "../../tsconfig-common.json"
+}

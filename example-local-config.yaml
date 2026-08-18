@@ -1,0 +1,31 @@
+db:
+  database: etoi274_db
+  user: etoi274_admin
+  port: 5433
+  password: PONER_PASSWORD
+install:
+  dump:
+    db:
+      owner: etoi274_owner
+  table-data-dir: 
+    - ../dmencu-data/etoi274
+    - ../dmencu-data/templates_app_final #no borrar, dejar último, chequea los tabs obligatorios al correr -- --dump-db
+login:
+  plus:
+    secret: PONERSECRET
+    allowHttpLogin: true
+    loginForm:
+      formTitle: etoi274
+devel:
+  forceShowAsEditable: false
+  useFileDevelopment: true
+client-setup:
+  skin: ""
+  background-img: ""
+  lang: es
+  title: etoi274
+  operativo: etoi274
+server:
+  skins:
+    confort:
+      local-path: ../backend-skins/dist/
