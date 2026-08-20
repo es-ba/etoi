@@ -1,15 +1,15 @@
 db:
   database: etoi274_db
   user: etoi274_admin
-  port: 5433
+  port: 5432
   password: PONER_PASSWORD
 install:
   dump:
     db:
       owner: etoi274_owner
-  table-data-dir: 
-    - ../dmencu-data/etoi274
-    - ../dmencu-data/templates_app_final #no borrar, dejar último, chequea los tabs obligatorios al correr -- --dump-db
+  table-data-dir:
+    #- ../dmencu-data/etoi274
+    #- ../dmencu-data/templates_app_final #no borrar, dejar último, chequea los tabs obligatorios al correr -- --dump-db
 login:
   plus:
     secret: PONERSECRET
