@@ -1,7 +1,7 @@
 {
   "name": "etoi",
   "description": "Encuesta de Generación y Género",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "author": "Codenautas <codenautas@googlegroups.com>",
   "license": "MIT",
@@ -10,16 +10,13 @@
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "dmencu":"^3.0.6"
-  },
   "dependencias provisorias: las que se pongan en dependencias ponerlas acá y sacarlas juntas": {},
   "devDependencies": {
     "@types/mocha": "^10.0.1",
     "@types/node": "^20.3.0",
     "discrepances": "~0.2.8",
-    "pg-triggers": "~0.3.2",
     "mixin-patch": "~0.5.0",
+    "pg-triggers": "~0.3.2",
     "types.d.ts": "~0.6.22",
     "typescript": "^5.9.2"
   },
@@ -51,5 +48,8 @@
     "stability": "extending",
     "type": "app",
     "ecmaVersion": 6
+  },
+  "dependencies": {
+    "dmencu": "^3.0.7"
   }
 }
