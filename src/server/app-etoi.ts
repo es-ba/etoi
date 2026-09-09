@@ -67,6 +67,18 @@ export function emergeAppetoi<T extends Constructor<dmencu.AppAppDmEncuType>>(Ba
             "background_color": coloresEntornos[miSufijo]
         }
     }
+
+    getMenuAsignacion(context:Context){
+        let menuAsignacion = super.getMenuAsignacion(context);
+        menuAsignacion.menuContent = menuAsignacion.menuContent.filter((item) => !['ingresador'].includes(item.name))
+        return menuAsignacion;
+    }
+
+    getMenuRecepcion(context:Context){
+        let menuRecepcion = super.getMenuRecepcion(context);
+        menuRecepcion.menuContent = menuRecepcion.menuContent.filter((item) => !['ingresador'].includes(item.name))
+        return menuRecepcion;
+    }
     /*
     getMenuControles(context:Context){
         let menuControles = []//super.getMenuControles(context);
