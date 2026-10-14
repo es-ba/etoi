@@ -1,36 +1,8 @@
 import { Respuestas, IdUnidadAnalisis, IdVariable, } from "dmencu/dist/unlogged/unlogged/tipos";
-import {setCalculoReaNoRea, buscarNoReaEnRespuestas, getEstructura} from "dmencu/dist/unlogged/unlogged/bypass-formulario";
+import {setCalculoReaNoRea, getEstructura} from "dmencu/dist/unlogged/unlogged/bypass-formulario";
 import { strict as likeAr, beingArray } from "like-ar";
 
-var esNoRea = (respuestas:Respuestas)=>{
-    //TODO GENERALIZAR
-    var unidadesARecorrer = ['viviendas'] as IdUnidadAnalisis[];
-    var estructura = getEstructura();
-    var uaPrincipal = likeAr(estructura.unidades_analisis).find((ua)=>!ua.padre);
-    var esNoRea = false;
-    var codNoRea:string|null= null;
-    var {codRea, esRea} = esRealizada(respuestas);
-    if ( !esRea) {
-        estructura.noReas = estructura.noReas.sort((a,b)=><number>a.orden-<number>b.orden);
-        let resnorea = buscarNoReaEnRespuestas( unidadesARecorrer,uaPrincipal!,respuestas,estructura.noReas,'no_rea');
-        codNoRea=resnorea.nrcodigo;
-        esNoRea=resnorea.esvalor;
-    }    
-    return {codNoRea, esNoRea};
-};
-var esNoReaSup = (respuestas:Respuestas)=>{
-    //TODO GENERALIZAR buscarNoreaRespuestas
-    var unidadesARecorrerSup = ['viviendas'] as IdUnidadAnalisis[];
-    var estructura = getEstructura();
-    var uaPrincipal = likeAr(estructura.unidades_analisis).find((ua)=>!ua.padre);
-    var esNoReaSup = false;
-    var codNoReaSup:string|null= null;
-    estructura.noReasSup = estructura.noReasSup.sort((a,b)=><number>a.orden-<number>b.orden);
-    let resnorea =buscarNoReaEnRespuestas( unidadesARecorrerSup,uaPrincipal!,respuestas,estructura.noReasSup,'no_rea_sup');//con los parametros que necesitariamos para generalizar
-        codNoReaSup=resnorea.nrcodigo;
-        esNoReaSup=resnorea.esvalor;
-    return {codNoReaSup,esNoReaSup}
-}; 
+
 /* de operativo PREJU
 var esRealizada = (respuestas:Respuestas)=>{
     //TODO GENERALIZAR
@@ -160,4 +132,4 @@ var esRealizadaSup=(respuestas:Respuestas)=>{
    return {codReaSup,esReaSup}
 }
 
-setCalculoReaNoRea(esNoRea, esNoReaSup, esRealizada, esRealizadaSup);
+//setCalculoReaNoRea(esNoRea, esNoReaSup, esRealizada, esRealizadaSup);

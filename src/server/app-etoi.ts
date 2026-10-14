@@ -70,13 +70,13 @@ export function emergeAppetoi<T extends Constructor<dmencu.AppAppDmEncuType>>(Ba
 
     getMenuAsignacion(context:Context){
         let menuAsignacion = super.getMenuAsignacion(context);
-        menuAsignacion.menuContent = menuAsignacion.menuContent.filter((item) => !['ingresador'].includes(item.name))
+        menuAsignacion.menuContent = menuAsignacion.menuContent.filter((item:MenuInfoBase) => !['ingresador'].includes(item.name))
         return menuAsignacion;
     }
 
     getMenuRecepcion(context:Context){
         let menuRecepcion = super.getMenuRecepcion(context);
-        menuRecepcion.menuContent = menuRecepcion.menuContent.filter((item) => !['ingresador'].includes(item.name))
+        menuRecepcion.menuContent = menuRecepcion.menuContent.filter((item:MenuInfoBase) => !['ingresador'].includes(item.name))
         return menuRecepcion;
     }
     /*
@@ -182,16 +182,6 @@ export function emergeAppetoi<T extends Constructor<dmencu.AppAppDmEncuType>>(Ba
         be.appendToTableDefinition('usuarios',function(tableDef:TableDefinition){
             tableDef.fields.push(
                 {name:'usuario_blaise' , typeName:'text' , editable: true },
-            );
-        })
-        be.appendToTableDefinition('no_rea',function(tableDef:TableDefinition){
-            tableDef.fields.push(
-                {name:'orden' , typeName:'bigint' , editable: true },
-            );
-        })
-        be.appendToTableDefinition('no_rea_sup',function(tableDef:TableDefinition){
-            tableDef.fields.push(
-                {name:'orden' , typeName:'bigint' , editable: true },
             );
         })
         be.appendToTableDefinition('tareas_tem_ingreso',function(tableDef:TableDefinition, _context?:TableContext){
