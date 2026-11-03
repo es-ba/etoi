@@ -1,18 +1,18 @@
 export const defConfig=`
 server:
   port: 3075
-  base-url: /etoi274
+  base-url: /etoi271
   session-store: memory
 db:
-  user: etoi274_admin
+  user: etoi271_admin
   motor: postgresql
   host: localhost
-  database: etoi274_db
+  database: etoi271_db
   schema: base
 install:
   dump:
     db:
-      owner: etoi274_owner
+      owner: etoi271_owner
       apply-generic-user-replaces: true
     admin-can-create-tables: true
     enances: inline
