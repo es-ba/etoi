@@ -1,29 +1,29 @@
 db:
-  database: etoi271_db
-  user: etoi271_admin
+  database: pcetoi_db
+  user: pcetoi_admin
   port: 5432
   password: PONER_PASSWORD
 install:
   dump:
     db:
-      owner: etoi271_owner
+      owner: pcetoi_owner
   table-data-dir:
-    #- ../dmencu-data/etoi271
+    #- ../dmencu-data/pcetoi
     #- ../dmencu-data/templates_app_final #no borrar, dejar último, chequea los tabs obligatorios al correr -- --dump-db
 login:
   plus:
     secret: PONERSECRET
     allowHttpLogin: true
     loginForm:
-      formTitle: etoi271
+      formTitle: pcetoi
 devel:
   forceShowAsEditable: false
   useFileDevelopment: true
 client-setup:
   background-img: ""
   lang: es
-  title: etoi271
-  operativo: etoi271
+  title: pcetoi
+  operativo: pcetoi
 server:
   skins:
     confort:
