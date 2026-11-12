@@ -16,7 +16,7 @@ import { visitas_sup         } from './table-visitas_sup';
 import { hogares_sup         } from './table-hogares_sup';
 import { personas_sup        } from './table-personas_sup';
 
-const APP_DM_VERSION="#26-08-05";
+const APP_DM_VERSION="#26-11-12";
 
 export type Constructor<T> = new(...args: any[]) => T;
 export function emergeAppetoi<T extends Constructor<dmencu.AppAppDmEncuType>>(Base:T){
