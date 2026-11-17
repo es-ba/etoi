@@ -1,5 +1,4 @@
 
-select sql2tabla_datos('base', 'tem_blaise', 'pcetoi');
 select sql2tabla_datos('base', 'tem', 'pcetoi');
 select sql2tabla_datos('base', 'viviendas', 'pcetoi');
 select sql2tabla_datos('base', 'visitas_sup', 'pcetoi');

@@ -74,8 +74,6 @@ export function viviendas(context:TableContext):TableDefinition {
         //campos de personas que agregamos en viviendas provisoriamente para poder guardar
         {"name": "msnombrei",          "typeName": "text",   "nullable": true},
         {"name": "msedadi",            "typeName": "bigint", "nullable": true},
-        {"name": "id_blaise",          "typeName": "text",   "nullable": true},
-        {"name": "id_blaise_parseado", "typeName": "text",   "nullable": true},
         {"name": "fin_1",              "typeName": "bigint", "nullable": true},
         {"name": "fin_2",              "typeName": "bigint", "nullable": true},
         {"name": "fin_3",              "typeName": "bigint", "nullable": true},
