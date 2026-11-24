@@ -107,7 +107,21 @@ export function hogares(context:TableContext):TableDefinition {
             "name": "razon2_9",
             "typeName": "bigint",
             "nullable": true
-        }
+        },
+        // variables de los casilleros de pcetoi (tabledef_generate de meta-enc)
+        {"name": "s1_obs",             "typeName": "text",    "nullable": true},
+        {"name": "total_r",            "typeName": "bigint",  "nullable": true},
+        {"name": "respond",            "typeName": "bigint",  "nullable": true},
+        {"name": "telefono",           "typeName": "text",    "nullable": true},
+        {"name": "movil",              "typeName": "text",    "nullable": true},
+        {"name": "correo",             "typeName": "text",    "nullable": true},
+        {"name": "a1_obs",             "typeName": "text",    "nullable": true},
+        {"name": "v2",                 "typeName": "bigint",  "nullable": true},
+        {"name": "v2_esp",             "typeName": "text",    "nullable": true},
+        {"name": "v4",                 "typeName": "bigint",  "nullable": true},
+        {"name": "h2",                 "typeName": "bigint",  "nullable": true},
+        {"name": "h2_esp",             "typeName": "text",    "nullable": true},
+        {"name": "h3",                 "typeName": "bigint",  "nullable": true}
     ],
     "sql": {
         "isReferable": true

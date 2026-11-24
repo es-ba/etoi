@@ -16,7 +16,11 @@ export function visitas_sup(context:TableContext):TableDefinition {
         {"name": "usu_sup", "typeName": "text", "nullable": true},
         {"name": "fecha_sup", "typeName": "text", "nullable": true},
         {"name": "hora_sup", "typeName": "text", "nullable": true},
-        {"name": "anotacion_sup", "typeName": "text", "nullable": true}
+        {"name": "anotacion_sup", "typeName": "text", "nullable": true},
+        // variables de los casilleros de pcetoi (tabledef_generate de meta-enc)
+        {"name": "fecha1",             "typeName": "date",    "nullable": true},
+        {"name": "hora1",              "typeName": "interval", "nullable": true},
+        {"name": "obs1",               "typeName": "text",    "nullable": true}
     ],
     "sql": {
         "isReferable": true
