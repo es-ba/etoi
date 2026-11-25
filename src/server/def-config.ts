@@ -21,6 +21,7 @@ install:
       prepare:
       - ../node_modules/operativos/install/rel_tabla_relacionada.sql
       - ../node_modules/dmencu/install/esquema_comun.sql
+      - funciones_sieh1_varcal.sql
       - ../node_modules/meta-enc/install/prepare.sql
       - ../node_modules/varcal/install/wrappers.sql
       - ../node_modules/operativos/install/sql2tabla_datos.sql
@@ -49,6 +50,7 @@ install:
       - ../node_modules/dmencu/install/inicial_update_varcal_por_encuesta.sql
       - ../node_modules/dmencu/install/desintegrarpk.sql
       - ../node_modules/dmencu/install/actualizar_inconvar.sql
+      - tabla_datos_unidades.sql
 login:
   infoFieldList: [usuario, rol, idper]
   table: usuarios
