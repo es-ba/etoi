@@ -11,7 +11,7 @@
     "dist"
   ],
   "dependencies": {
-    "dmencu": "^3.9.14"
+    "dmencu": "^3.10.0"
   },
   "dependencias provisorias: las que se pongan en dependencias ponerlas acá y sacarlas juntas": {},
   "devDependencies": {
